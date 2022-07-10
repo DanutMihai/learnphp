@@ -1,0 +1,73 @@
+body{
+    background: #E6EAE9;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:    1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "top-bar         top-bar         top-bar         top-bar         top-bar         top-bar         top-bar"
+                         "confluence-link confluence-link confluence-link confluence-link confluence-link confluence-link confluence-link"
+                         "table-container table-container table-container table-container table-container table-container table-container"
+                         "table-container table-container table-container table-container table-container table-container table-container"
+                         "table-container table-container table-container table-container table-container table-container table-container"
+                         "table-container table-container table-container table-container table-container table-container table-container";
+    column-gap: 5px;
+
+}
+
+#top-bar{
+    grid-area: top-bar;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+#confluence-links{
+    grid-area: confluence-link;
+    background-color: #E6EAE9;;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    color: #ff3838 ;
+    font-weight: 900;   
+}
+
+#order-table-container{
+    grid-area: table-container;
+background-color: #ff3838;    
+}
+
+a{
+    text-decoration: none;
+    color: #3E82EF;
+    font-weight: bolder;
+}
+
+.logo{
+    max-height: 100px;
+    padding: 0px 10px;
+    border-right: 1px solid #3E82EF;
+    margin-right: 10px;
+}
+
+#news-info{
+    background-color: rgb(255, 248, 247);
+    border: 1px solid red;
+    /* padding: 10px; */
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+}
+.important-alert{
+    color: crimson;
+    font-weight: bolder;
+}
